@@ -1,0 +1,18 @@
+<table>
+    <thead>
+      <tr>
+        <th (click)="sort('name')">Name</th>
+        <th (click)="sort('age')">Age</th>
+        <th (click)="sort('country')">Country</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of sortedData">
+        <td>{{ item.name }}</td>
+        <td>{{ item.age }}</td>
+        <td>{{ item.country }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+
