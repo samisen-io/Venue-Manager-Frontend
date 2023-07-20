@@ -4,6 +4,7 @@ interface TableData {
   name: string;
   age: number;
   country: string;
+  date:Date;
 }
 
 @Component({
@@ -13,10 +14,10 @@ interface TableData {
 })
 export class ListViewComponent {
   data: TableData[] = [
-    { name: 'John Doe', age: 25, country: 'USA' },
-    { name: 'Alice Smith', age: 30, country: 'Canada' },
-    { name: 'Bob Johnson', age: 22, country: 'Australia' },
-    { name:'Ala', age:29, country:'Asia'},
+    { name: 'James', age: 25, country: 'USA', date:new Date('1-2-2022') },
+    { name: 'Anusha', age: 30, country: 'Canada' , date:new Date('8-2-2021')},
+    { name: 'Zob harry', age: 22, country: 'Australia', date:new Date('3-5-2024') },
+    { name:'Babu', age:29, country:'Asia', date:new Date('4-11-2005')},
   ];
 
   sortedData: TableData[] = [...this.data];
